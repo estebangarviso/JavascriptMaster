@@ -1,0 +1,136 @@
+/* General Settings */
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.3em;
+}
+h1, h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+}
+
+#content .main-title {
+    font-size: 45px;
+    margin-bottom: 2rem;
+    font-weight: 300;
+    text-align: center;
+    line-height: initial;
+}
+/* Header */
+#header-container .logo{
+    text-align: center;
+}
+#header #escalab_logo {
+    width: 150px;
+}
+#header #logo-curso {
+    position: absolute;
+}
+
+#header {
+    background: #1c1c1c;
+}
+.header-top {
+    padding-top: 0.5714285714rem;
+    padding-bottom: 0.5714285714rem;
+    color: #fff;
+}
+#header .container {
+    max-width: 100%;
+}
+
+/* Main Section */
+#wrapper {
+    width: 100%;
+    background-color: #ededed;
+    padding: 2rem 1rem;
+    min-height: 100vh;
+}
+#module-list {
+    max-width: 1200px;
+}
+.modules.row > [class*="col-"] {
+    padding: 0.3571428571rem;
+}
+.module-content .btn-primary {
+    margin:auto 0 0 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    border: 0;
+    color: #fff;
+    height: 55px;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.module-content:hover .btn-primary {
+    background-color: #000;
+}
+.module{
+    color: #fff;
+    min-height: 260px;
+}
+.module .module-content{
+    height: 100%;
+    padding: 2rem;
+    border-radius: 15px;
+    border: 3px solid transparent;
+    cursor: pointer;
+    transition: all .4s ease;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.module .module-content:hover{
+    color: #000;
+    box-shadow: 0 50px 100px rgba(0, 0, 0, .02);
+    background-color: white;
+    transform: scale(.95);
+}
+.module .module-icon {
+    width: 100%;
+    max-width: 120px;
+    margin-bottom: 1.5rem;
+}
+.module .sub-title {
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.module .text-content {
+    font-size: 14px;
+    line-height: 25px;
+    opacity: .8;
+}
+.bg-soft-green {
+    background: #50e3c1;
+}
+.bg-soft-black {
+    background: #4a4a4a;
+}
+.bg-soft-blue {
+    background: #3fa7f4;
+}
+.bg-soft-grey {
+    background: #cfbdf7;
+}
+/* Animations */
+.floating {  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+  
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }    
+}

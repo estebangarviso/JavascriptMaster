@@ -1,0 +1,69 @@
+// Custom divider with icon
+.divider-custom {
+    margin: 1.25rem 0 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .divider-custom-line {
+        width: 100%;
+        max-width: 7rem;
+        height: 0.25rem;
+        background-color: $secondary;
+        border-radius: 1rem;
+        border-color: $secondary !important;
+
+        &:first-child {
+            margin-right: 1rem;
+        }
+
+        &:last-child {
+            margin-left: 1rem;
+        }
+    }
+
+    .divider-custom-icon {
+        color: $secondary !important;
+        font-size: 2rem;
+        
+        .fa-html5{
+            color: #E34F26;
+            font-size: 3em;
+            @include media-breakpoint-up(lg) {
+                font-size: 5em;
+            }
+        }
+        .fa-css3-alt{
+            color: #1572B6;
+            font-size: 3em;
+            @include media-breakpoint-up(lg) {
+                font-size: 5em;
+            }
+        }
+        .fa-js-square{
+            color: #F7DF1E;
+            font-size: 3em;
+            @include media-breakpoint-up(lg) {
+                font-size: 5em;
+            }
+        }
+        .fa-git-alt{
+            color: #F05032;
+            font-size: 3em;
+            @include media-breakpoint-up(lg) {
+                font-size: 5em;
+            }
+        }
+    }
+
+    &.divider-light {
+        .divider-custom-line {
+            background-color: $white;
+        }
+
+        .divider-custom-icon {
+            color: $white !important;
+        }
+    }
+}
