@@ -34,7 +34,7 @@
   ![Bootstrap](https://img.shields.io/badge/Bootstrap-v4.6.0-7952B3?style=solid&logoColor=ffffff&labelColor=7952B3&logo=bootstrap)
   ![Font Awesome](https://img.shields.io/badge/FontAwesome-v5.15-339AF0?style=solid&labelColor=339AF0&logoColor=ffffff&logo=FontAwesome)
 
-  ##### Interface Based on Freelancer by StartBootstrap
+  ##### UI Based on Freelancer by StartBootstrap
   ![NPM](https://img.shields.io/badge/npm-v6.14.11-CB3837?style=solid&labelColor=CB3837&logoColor=ffffff&logo=NPM)
   ![Sass](https://img.shields.io/badge/Sass-v6.14.11-CC6699?style=solid&labelColor=CC6699&logoColor=ffffff&logo=Sass)
   ![Pug](https://img.shields.io/badge/Pug-v3.0.2-A86454?style=solid&labelColor=A86454&logoColor=ffffff&logo=Pug)
