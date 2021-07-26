@@ -21,6 +21,7 @@ html(lang='en')
         link(href='https://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic', rel='stylesheet', type='text/css')
         // Global site tag (gtag.js) - Google Analytics
         script(src='https://www.googletagmanager.com/gtag/js?id=UA-193953522-1', crossorigin='anonymous')
+        script(src='js/holder.min.js')
         script
             include ../js/googleanalytics.js
         // Google Tag Manager 
@@ -80,7 +81,7 @@ html(lang='en')
                             .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
                                 .portfolio-item-caption-content.text-center.text-white
                                     i.fas.fa-eye.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/task1.png', alt='Task 1 Javascript Master Escalab Academy')
+                            img.img-fluid(src='holder.js/900x650?bg=ffe135&fg=010101&auto=yes&text=Task On Work \\n Image \\n (holder_dimensions)', alt='Task 1 Javascript Master Escalab Academy')
 
         // About Section
         section#about.page-section.bg-primary.mb-0
@@ -212,9 +213,9 @@ html(lang='en')
                                     #modal-carousel-task1.carousel.mb-3.slide.carousel-fade(data-ride='carousel')
                                         .carousel-inner
                                             .carousel-item.active
-                                                img.d-block.w-100(src='assets/img/portfolio/task1.png' alt='Task 1 Javascript Master Desktop Version')
+                                                img.d-block.w-100(src='holder.js/900x650?bg=ffe135&fg=010101&auto=yes&text=Task On Work \\n Desktop Image \\n (holder_dimensions)' alt='Task 1 Javascript Master Desktop Version')
                                             .carousel-item
-                                                img.d-block.w-100(src='assets/img/portfolio/task1-mobile.png' alt='Task 1 Javascript Master Mobile Version')
+                                                img.d-block.w-100(src='holder.js/900x650?bg=ffe135&fg=010101&auto=yes&text=Task On Work \\n Mobile Image \\n (holder_dimensions)' alt='Task 1 Javascript Master Mobile Version')
                                         a.carousel-control-prev(href='#modal-carousel-task1' role='button' data-slide='prev')
                                             i.fa.fa-2x.fa-chevron-left(aria-hidden='true')
                                             span.sr-only Previous
@@ -222,8 +223,21 @@ html(lang='en')
                                             i.fa.fa-2x.fa-chevron-right(aria-hidden='true')
                                             span.sr-only Next
                                     // Portfolio Modal - Text
-                                    p.mb-5
-                                        | Exercise related to Flex of HTML5 and CSS3. A plus is added with reboot, grid and main bootstrap stylesheets.
+                                    div.mb-5
+                                        p
+                                            span
+                                                | Build a form in an HTML file, with 3 fields email, password and confirm password, also include a submit button.
+                                                br
+                                                | The fields must have the following validations:
+                                        ul.list-group.list-group-flush.mb-3
+                                            li.list-group-item Mail must include @.
+                                            li.list-group-item Password must be at least 8 characters long.
+                                            li.list-group-item Password and confirm password must have the same value.
+                                        p.mb-0
+                                            span
+                                                | By clicking on the submit button, the fields must be validated, and if they are correct the border of the fields must be green, if they are incorrect, the borders must be red.
+                                                br
+                                                | The readability of the code and good practices should be considered both in their order, the names of variables and functions.
                                     a.btn.btn-primary(href='https://estebangarviso.github.io/JavascriptMaster/static/task1/')
                                         i.fas.fa-eye.fa-fw
                                         | View
