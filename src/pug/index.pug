@@ -79,6 +79,9 @@ html(lang='en')
                     .col-md-6.col-lg-4.mb-5
                         blockquote.text-center
                             p.lead.mb-0 Form Validation with JavaScript
+                            footer.blockquote-footer
+                                | Task 1
+                                cite(title="JavaScript Master") JavaScript Master
                         .portfolio-item.mx-auto(data-toggle='modal', data-target='#portfolioModal1')
                             .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
                                 .portfolio-item-caption-content.text-center.text-white
@@ -204,7 +207,7 @@ html(lang='en')
                             .row.justify-content-center
                                 .col-lg-8
                                     // Portfolio Modal - Title
-                                    h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0#portfolioModal1Label Task 1
+                                    h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0#portfolioModal1Label Form Validation with JavaScript
                                     // Icon Divider
                                     .divider-custom
                                         .divider-custom-line
@@ -225,16 +228,22 @@ html(lang='en')
                                             i.fa.fa-2x.fa-chevron-right(aria-hidden='true')
                                             span.sr-only Next
                                     // Portfolio Modal - Text
-                                    div.mb-5
+                                    div.text-left.mb-5
                                         p
                                             span
                                                 | Build a form in an HTML file, with 3 fields email, password and confirm password, also include a submit button.
                                                 br
                                                 | The fields must have the following validations:
-                                        ul.list-group.list-group-flush.mb-3
-                                            li.list-group-item Mail must include @.
-                                            li.list-group-item Password must be at least 8 characters long.
-                                            li.list-group-item Password and confirm password must have the same value.
+                                        ul.list-group.mb-3
+                                            li.list-group-item
+                                                span.badge.badge-primary.badge-pill 1
+                                                | Mail must include @.
+                                            li.list-group-item
+                                                span.badge.badge-primary.badge-pill 2
+                                                | Password must be at least 8 characters long.
+                                            li.list-group-item
+                                                span.badge.badge-primary.badge-pill 3
+                                                | Password and confirm password must have the same value.
                                         p.mb-0
                                             span
                                                 | By clicking on the submit button, the fields must be validated, and if they are correct the border of the fields must be green, if they are incorrect, the borders must be red.
