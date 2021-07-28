@@ -28,6 +28,23 @@ h1, h2 {
     color: #fff;
     border-radius: 1.875rem;
 }
+#registerForm input::placeholder {
+    color: #f0f0f0;
+}
+#registerForm input:focus::placeholder {
+    color: #495057ad;
+}
+#registerForm input:not(:focus){
+    color: #fff;
+}
+.js-show-password{
+    color: #ffdd3c;
+    border-color: #ffdd3c;
+}
+.js-show-password:hover{
+    color: #1c1c1c;
+    background-color: #ffdd3c;
+}
 /* Header */
 #header-container .logo{
     text-align: center;
@@ -55,6 +72,9 @@ h1, h2 {
     max-width: 100%;
 }
 /* Forms */
+.form-control{
+    border: 0.125rem solid #ffdd3c !important;
+}
 @media (max-width: 767.98px) {
     .col-md-6.floating-label-form-group:not(:first-child){
         padding-left: 0;

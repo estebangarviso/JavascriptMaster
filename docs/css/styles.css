@@ -10126,6 +10126,10 @@ h3 {
   color: #fff !important;
 }
 
+.btn {
+  padding: 0.5rem 1.25rem !important;
+}
+
 .btn-xl {
   padding: 1rem 1.75rem;
   font-size: 1.25rem;
