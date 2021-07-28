@@ -3,15 +3,19 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 document.addEventListener('DOMContentLoaded', function (e){
-    "use strict"; // Start of use strict
+    "use strict"; // Force variables to be declarated
     //  Form Floating Labels JS
     document.querySelectorAll('.floating-label-form-group').forEach(el => {
         el.addEventListener('keyup', (ev) => {
             let cT = ev.currentTarget,
                 t = ev.target;
-            if(t.value || t.value.length > 0)
+            if(t.value && t.value.length > 0)
                 cT.classList.add('floating-label-form-group-with-value');
-            if(!t.value || t.value.length === 0)
+        });
+        el.addEventListener('change', (ev) => {
+            let cT = ev.currentTarget,
+                t = ev.target;
+            if(!t.value && t.value.length === 0)
                 cT.classList.remove('floating-label-form-group-with-value');
         });
         el.addEventListener('focus', (ev) => {
