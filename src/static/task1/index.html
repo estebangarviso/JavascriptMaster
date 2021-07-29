@@ -4,15 +4,15 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Register Form Validation</title>
-    <meta name="description" content="Task 1 Javascript Master Register Form Validation Escalab Academy">
+    <title>Crea una cuenta</title>
+    <meta name="description" content="Task 1 Javascript Master Form Validation Escalab Academy">
     <meta name="keywords" content="Task 1, Javavascript Master">
     <link rel="alternate" href="https://estebangarviso.github.io/JavascriptMaster/static/task1/" hreflang="es-CL">
     <link rel="alternate" href="https://estebangarviso.github.io/JavascriptMaster/static/task1/" hreflang="x-default">
-    <meta property="og:title" content="Register Form Validation">
+    <meta property="og:title" content="Crea una cuenta">
     <meta property="og:url" content="https://estebangarviso.github.io/JavascriptMaster/static/task1/">
     <meta property="og:site_name" content="Javascript Master">
-    <meta property="og:description" content="Task 1 Javascript Master Register Form Validation Escalab Academy">
+    <meta property="og:description" content="Task 1 Javascript Master Form Validation Escalab Academy">
     <meta property="og:type" content="website">
     <meta property="og:image"
         content="https://estebangarviso.github.io/JavascriptMaster/static/task1/assets/img/logo.png">
@@ -38,6 +38,7 @@
         href="https://estebangarviso.github.io/JavascriptMaster/assets/fonts/fontawesome/css/all.min.css">
     <!-- Use Startboostrap - Freelance Theme -->
     <link rel="stylesheet" href="https://estebangarviso.github.io/JavascriptMaster/css/styles.css">
+    <!-- <link rel="stylesheet" href="css/styles.css"> -->
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/styles.css">
     <!-- Validate Obj -->
@@ -128,18 +129,38 @@
                 <section id="main">
                     <section id="content" class="page-register">
                         <div id="register-container" class="container">
-                            <h1 class="main-title">Register Form Validation</h1>
+                            <h1 class="main-title">Crea una cuenta</h1>
                             <form id="registerForm" name="submitRegister" novalidate="novalidate">
                                 <div class="form-row">
                                     <div class="col-md-6 form-group floating-label-form-group mb-0 pb-2">
+                                        <label class="form-label" for="country">Country</label>
+                                        <select class="form-control px-3 rounded" id="country" name="country" type="text"
+                                            required="required" aria-invalid="false">
+                                            <option>-- Select country --</option>
+                                            <option value="1">Chile</option>
+                                            <option value="2">Argentina</option>
+                                            <option value="3">Peru</option>
+                                            <option value="4">México</option>
+                                        </select>
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="col-md-6 form-group floating-label-form-group mb-0 pb-2">
+                                        <label class="form-label" for="dni">DNI</label>
+                                        <input class="form-control px-3 rounded" id="dni" name="dni" type="text" placeholder="DNI"
+                                            required="required" aria-invalid="false">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-md-6 form-group floating-label-form-group mb-0 pb-2">
                                         <label class="form-label" for="firstname">Firstname</label>
-                                        <input class="form-control px-3 rounded" id="firstname" type="text" placeholder="Firstname"
+                                        <input class="form-control px-3 rounded" id="firstname" name="firstname" type="text" placeholder="Firstname"
                                             required="required" aria-invalid="false">
                                         <p class="help-block text-danger"></p>
                                     </div>
                                     <div class="col-md-6 form-group floating-label-form-group mb-0 pb-2">
                                         <label class="form-label" for="lastname">Lastname</label>
-                                        <input class="form-control px-3 rounded" id="lastname" type="text" placeholder="Lastname"
+                                        <input class="form-control px-3 rounded" id="lastname" name="lastname" type="text" placeholder="Lastname"
                                             required="required" aria-invalid="false">
                                         <p class="help-block text-danger"></p>
                                     </div>
@@ -156,11 +177,11 @@
                                     <div class="col-md-6 form-group floating-label-form-group mb-0 pb-2">
                                         <label class="form-label" for="password">Password</label>
                                         <div class="input-group">
-                                            <input class="form-control px-3 rounded-left js-visible-password" id="password" name="password" type="password"
+                                            <input class="form-control rounded-left px-3 js-visible-password" id="password" name="password" type="password"
                                                 placeholder="Password" required="required" title="At least 8 characters long"
                                                 pattern=".{8,}" aria-invalid="false">
                                             <span class="input-group-append">
-                                                <button class="btn btn-outline-secondary js-show-password" type="button">
+                                                <button class="btn btn-outline-primary border-0 js-show-password" type="button">
                                                     <i class="fas fa-eye-slash" aria-hidden="true"></i>
                                                 </button>
                                             </span>
@@ -174,12 +195,20 @@
                                                 placeholder="Confirm Password" required="required" title="At least 8 characters long"
                                                 pattern=".{8,}" aria-invalid="false">
                                             <span class="input-group-append">
-                                                <button class="btn btn-outline-secondary js-show-password" type="button"
+                                                <button class="btn btn-outline-primary border-0 js-show-password" type="button"
                                                     data-action="show-password">
                                                     <i class="fas fa-eye-slash" aria-hidden="true"></i>
                                                 </button>
                                             </span>
                                         </div>
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col form-group floating-label-form-group mb-0 pb-2">
+                                        <label class="form-label" for="email">Message</label>
+                                        <textarea class="form-control px-3 rounded" id="message" name="message"
+                                            placeholder="Message" required="required" aria-invalid="false" row="3"></textarea>
                                         <p class="help-block text-danger"></p>
                                     </div>
                                 </div>
@@ -199,7 +228,7 @@
                                 <div class="form-row">
                                     <div class="form-group">
                                         <button class="btn btn-primary btn-xl" id="submitRegisterButton"
-                                            name="submitRegisterButton" type="submit">Register</button>
+                                            name="submitRegisterButton" type="submit">Enviar</button>
                                     </div>
                                 </div>
                             </form>

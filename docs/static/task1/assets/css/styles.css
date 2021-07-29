@@ -1,3 +1,7 @@
+/*!
+ * Copyright 2021 Esteban Garviso
+ * Licensed under MIT (https://github.com/estebangarviso/JavascriptMaster/blob/main/LICENSE.md)
+ */
 /* Typography and General Settings */
 body {
     font-family: 'Lato', sans-serif;
@@ -28,23 +32,22 @@ h1, h2 {
     color: #fff;
     border-radius: 1.875rem;
 }
-#registerForm input::placeholder {
+#registerForm input::placeholder,
+#registerForm textarea::placeholder,
+#registerForm select::placeholder {
     color: #f0f0f0;
 }
-#registerForm input:focus::placeholder {
+#registerForm input:focus::placeholder,
+#registerForm textarea:focus::placeholder,
+#registerForm select:focus::placeholder {
     color: #495057ad;
 }
-#registerForm input:not(:focus){
+#registerForm input:not(:focus),
+#registerForm textarea:not(:focus),
+#registerForm select:not(:focus){
     color: #fff;
 }
-.js-show-password{
-    color: #ffdd3c;
-    border-color: #ffdd3c;
-}
-.js-show-password:hover{
-    color: #1c1c1c;
-    background-color: #ffdd3c;
-}
+
 /* Header */
 #header-container .logo{
     text-align: center;
@@ -72,9 +75,10 @@ h1, h2 {
     max-width: 100%;
 }
 /* Forms */
-.form-control{
-    border: 0.125rem solid #ffdd3c !important;
+.form-control:focus {
+    border: 0.125rem solid #ffdd3c;
 }
+
 @media (max-width: 767.98px) {
     .col-md-6.floating-label-form-group:not(:first-child){
         padding-left: 0;

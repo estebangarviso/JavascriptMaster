@@ -10297,7 +10297,8 @@ h3 {
   border-bottom: 1px solid #e9ecef;
 }
 .floating-label-form-group input,
-.floating-label-form-group textarea {
+.floating-label-form-group textarea,
+.floating-label-form-group select {
   font-size: 1.5em;
   position: relative;
   z-index: 1;
