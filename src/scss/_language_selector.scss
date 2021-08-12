@@ -1,0 +1,10 @@
+#language_selector {
+    img.lang-flag{
+        width: 1.5rem;
+    }
+    a:hover {
+        text-decoration: none;
+        color:$primary;
+        cursor: pointer;
+    }
+}

@@ -27,24 +27,24 @@ h1, h2 {
     padding: 2rem 1rem;
     min-height: 100vh;
 }
-#register-container{
+#customer-container{
     background-color: #1c1c1c;
     color: #fff;
     border-radius: 1.875rem;
 }
-#registerForm input::placeholder,
-#registerForm textarea::placeholder,
-#registerForm select::placeholder {
+#customerForm input::placeholder,
+#customerForm textarea::placeholder,
+#customerForm select::placeholder {
     color: #f0f0f0;
 }
-#registerForm input:focus::placeholder,
-#registerForm textarea:focus::placeholder,
-#registerForm select:focus::placeholder {
+#customerForm input:focus::placeholder,
+#customerForm textarea:focus::placeholder,
+#customerForm select:focus::placeholder {
     color: #495057ad;
 }
-#registerForm input:not(:focus),
-#registerForm textarea:not(:focus),
-#registerForm select:not(:focus){
+#customerForm input:not(:focus),
+#customerForm textarea:not(:focus),
+#customerForm select:not(:focus){
     color: #fff;
 }
 
@@ -84,18 +84,4 @@ h1, h2 {
         padding-left: 0;
         border-left: 0;
     }
-}
-/* Animations */
-.floating {  
-    animation-name: floating;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    margin-left: 30px;
-    margin-top: 5px;
-}
-@keyframes floating {
-    0% { transform: translate(0,  0px); }
-    50%  { transform: translate(0, 15px); }
-    100%   { transform: translate(0, -0px); }    
 }

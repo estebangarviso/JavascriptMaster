@@ -10349,3 +10349,12 @@ form .row:first-child .floating-label-form-group {
 .copyright {
   background-color: #030303;
 }
+
+#language_selector img.lang-flag {
+  width: 1.5rem;
+}
+#language_selector a:hover {
+  text-decoration: none;
+  color: #ffdd3c;
+  cursor: pointer;
+}
